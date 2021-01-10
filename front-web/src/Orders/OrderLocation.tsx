@@ -56,11 +56,18 @@ function OrderLocation({ onChangeLocation }: Props) {
             <div className="order-location-content">
                 <h3 className="order-location-title"> Selecione onde o pedido deve ser entregue:</h3>
                 <div className="filter-container">
-                    <AsyncSelect placeholder="Digite o endereço de entrega"
-                        className="filter" loadOptions={loadOptions} onChange={value => handleChangeSelect(value as Place)}
+                    <AsyncSelect
+                        placeholder="Digite o endereço de entrega"
+                        className="filter"
+                        loadOptions={loadOptions}
+                        onChange={value => handleChangeSelect(value as Place)}
                     />
                 </div>
-                <MapContainer center={address.position} zoom={13} scrollWheelZoom={false} key={address.position.lat}>
+                <MapContainer
+                    center={address.position}
+                    zoom={13}
+                    scrollWheelZoom={false}
+                    key={address.position.lat}>
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

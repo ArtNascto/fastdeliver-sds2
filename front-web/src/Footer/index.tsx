@@ -1,7 +1,7 @@
 import './styles.css'
 import { ReactComponent as Youtube } from './youtube.svg'
-import { ReactComponent as Insta } from './youtube.svg'
-import { ReactComponent as Linkedin } from './youtube.svg'
+import { ReactComponent as Insta } from './instagram.svg'
+import { ReactComponent as Linkedin } from './linkedin.svg'
 function Footer() {
     return (
         <footer className="main-footer">

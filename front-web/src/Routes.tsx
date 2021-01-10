@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Footer from "./Footer";
 import Home from "./Home";
 import Navbar from "./Navbar";
 import Orders from "./Orders";
@@ -16,6 +17,8 @@ function Routes() {
                     <Home />
                 </Route>
             </Switch>
+            <Footer />
+
         </BrowserRouter>
     )
 }
